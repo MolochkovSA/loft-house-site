@@ -1,0 +1,15 @@
+.nav {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.56px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__list-item:nth-child(3) {
+  margin-right: -2px;
+}

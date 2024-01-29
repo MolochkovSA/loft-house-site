@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 74px;
+  min-height: 840px;
+  background: linear-gradient(#242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%),
+    url('../image/header/header-bg.jpg');
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  color: $accent;
+  text-align: center;
+  font-family: $font-accent;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 81px;
+}
+
+.header__footer {
+}
+.header__contacts {
+  padding-left: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 98px;
+  text-align: left;
+}
