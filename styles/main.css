@@ -109,6 +109,7 @@ legend {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #242b33;
   color: #fff;
   font-size: 16px;
 }
@@ -124,19 +125,40 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
+}
+.container--benefits {
+  max-width: 824px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.visually-hidden {
+  /* Contain text within 1px box */
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  /* Keep the layout */
+  position: absolute;
+  /* Remove any visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); /* browsers in the future */
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 74px;
   min-height: 840px;
-  background: linear-gradient(#242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../image/header/header-bg.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../image/header/header-bg.jpg");
 }
 
 .header__top-row {
@@ -155,7 +177,7 @@ a:hover {
   margin-bottom: 81px;
 }
 
-.header__contacts {
+.header__footer {
   padding-left: 3px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -199,4 +221,48 @@ a:hover {
 }
 .info--phone::before {
   background-image: url("./../image/header/phone.svg");
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  align-content: center;
+  gap: 70px;
+}
+
+.benefits__item1,
+.benefits__item2,
+.benefits__item3,
+.benefits__item4 {
+  text-align: center;
+}
+
+.benefits__item1 {
+  width: 193px;
+}
+
+.benefits__item2 {
+  width: 133px;
+}
+
+.benefits__item3 {
+  width: 134px;
+}
+
+.benefits__item4 {
+  width: 124px;
+}
+
+.benefits__img {
+  margin-bottom: 53px;
+}
+
+.benefits__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.35;
 }/*# sourceMappingURL=main.css.map */
