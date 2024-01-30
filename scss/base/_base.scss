@@ -45,3 +45,16 @@ a {
   /* Prevent the screen reader to skip spaces between words */
   white-space: nowrap;
 }
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  padding-left: 1px;
+  color: $accent;
+  font-family: $font-accent;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34px;
+}
