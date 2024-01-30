@@ -155,6 +155,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 74px;
   min-height: 840px;
