@@ -342,4 +342,81 @@ a:hover {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("./../image/cta/cta-bg.jpg"), #c4c4c4;
+}
+
+.cta__title {
+  margin-top: 7px;
+  margin-left: -1px;
+  margin-bottom: 24px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  line-height: 1.5;
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.93; /* 192.857% */
+  transition: background-color 0.2s ease-in;
+}
+.form__input::-moz-placeholder {
+  color: #bebebe;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form__privacy {
+  margin-top: 3px;
+  letter-spacing: -0.1px;
+  color: #e7e7e7;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23; /* 123.077% */
+  text-align: center;
+}
+
+.form__btn {
+  height: 50px;
+  padding: 12px;
+  background-color: #d4c17f;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px; /* 168.75% */
+  transition: background-color 0.2s ease-in;
+}
+.form__btn:hover {
+  background-color: #ddc676;
 }/*# sourceMappingURL=main.css.map */
