@@ -7,8 +7,8 @@
   padding-bottom: 74px;
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%),
-    url('./../image/header/header-bg.jpg');
-
+    url('./../image/header/header-bg.jpg') no-repeat;
+  background-position: center;
   @include mediaTabled {
     min-height: unset;
     row-gap: 50px;
