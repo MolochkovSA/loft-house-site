@@ -10,9 +10,19 @@
       content: '';
       position: absolute;
       left: 0;
-      top: 0;
+      top: 50%;
       width: 21px;
       height: 21px;
+      transform: translate(0%, -50%);
+      background-position: center;
+    }
+  }
+
+  @include mediaTabled {
+    font-size: 14px;
+    &--map,
+    &--phone {
+      padding-left: 25px;
     }
   }
 

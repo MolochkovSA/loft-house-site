@@ -178,11 +178,32 @@ a:hover {
   min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../image/header/header-bg.jpg");
 }
+@media screen and (max-width: 960px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
+}
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .header__nav-btn {
+    display: block;
+  }
 }
 
 .header__title {
@@ -194,6 +215,11 @@ a:hover {
   line-height: normal;
   margin-bottom: 81px;
 }
+@media screen and (max-width: 960px) {
+  .header__title {
+    font-size: 32px;
+  }
+}
 
 .header__footer {
   padding-left: 3px;
@@ -201,6 +227,14 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 98px;
   text-align: left;
+}
+@media screen and (max-width: 960px) {
+  .header__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
 
 .nav {
@@ -230,9 +264,19 @@ a:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   width: 21px;
   height: 21px;
+  transform: translate(0%, -50%);
+  background-position: center;
+}
+@media screen and (max-width: 960px) {
+  .info {
+    font-size: 14px;
+  }
+  .info--map, .info--phone {
+    padding-left: 25px;
+  }
 }
 .info--map::before {
   background-image: url("./../image/header/map.svg");
