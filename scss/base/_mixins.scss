@@ -1,0 +1,8 @@
+@mixin decorNumber {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.02;
+  font-family: $font-accent;
+  font-size: 400px;
+  font-weight: 700;
+}

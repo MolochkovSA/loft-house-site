@@ -1,4 +1,14 @@
-.departments__title {
+.apartments {
+  position: relative;
+  &::before {
+    content: 'III';
+    top: -75px;
+    right: calc(50% + 555px);
+    transform: translate(50%, 0);
+    @include decorNumber;
+  }
+}
+.apartments__title {
   margin-bottom: 95px;
   margin-left: 1px;
 }
