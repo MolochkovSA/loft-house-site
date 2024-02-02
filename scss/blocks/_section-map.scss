@@ -8,10 +8,16 @@
     transform: translate(50%, 0);
     @include decorNumber;
   }
+  @include mediaTabled {
+    padding: 60px 0;
+  }
 }
 .section-map__title {
   padding-top: 7px;
   margin-bottom: 94px;
+  @include mediaTabled {
+    margin-bottom: 40px;
+  }
 }
 .map {
   height: 358px;

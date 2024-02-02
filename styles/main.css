@@ -661,6 +661,7 @@ a:hover {
 }
 
 .video {
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
@@ -703,6 +704,11 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease-in;
 }
+@media screen and (max-width: 960px) {
+  .video__icon {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -725,10 +731,20 @@ a:hover {
   font-size: 400px;
   font-weight: 700;
 }
+@media screen and (max-width: 960px) {
+  .section-map {
+    padding: 60px 0;
+  }
+}
 
 .section-map__title {
   padding-top: 7px;
   margin-bottom: 94px;
+}
+@media screen and (max-width: 960px) {
+  .section-map__title {
+    margin-bottom: 40px;
+  }
 }
 
 .map {
@@ -739,10 +755,20 @@ a:hover {
 .feedback {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 960px) {
+  .feedback {
+    padding-bottom: 60px;
+  }
+}
 
 .feedback__title {
   padding-top: 8px;
   margin-bottom: 45px;
+}
+@media screen and (max-width: 960px) {
+  .feedback__title {
+    margin-bottom: 25px;
+  }
 }
 
 .feedback__form {
@@ -750,6 +776,11 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -759,11 +790,23 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.04rem;
 }
+@media screen and (max-width: 960px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 960px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+  }
 }
 
 .footer__logo {
