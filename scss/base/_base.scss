@@ -56,6 +56,9 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 34px;
+  @include mediaTabled {
+    font-size: 28px;
+  }
 }
 
 .link-bold {

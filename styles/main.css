@@ -162,6 +162,11 @@ a:hover {
   font-weight: 700;
   line-height: 34px;
 }
+@media screen and (max-width: 960px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .link-bold {
   color: #d4c17f;
@@ -382,7 +387,7 @@ a:hover {
 .benefits {
   overflow: hidden;
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
 }
 .benefits::after {
   content: "II";
@@ -477,11 +482,21 @@ a:hover {
   margin-bottom: 95px;
   margin-left: 1px;
 }
+@media screen and (max-width: 960px) {
+  .apartments__title {
+    margin-bottom: 45px;
+  }
+}
 
 .apartmemt__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 960px) {
+  .apartmemt__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -535,6 +550,13 @@ a:hover {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (max-width: 960px) {
+  .card__title {
+    font-size: 20px;
+    left: 30px;
+    bottom: 25px;
+  }
 }
 
 .cta {
