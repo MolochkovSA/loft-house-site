@@ -104,7 +104,7 @@
             </div>
             <form class="form cta__form" action="">
               <input class="form__input" type="text" placeholder="Ваше имя" autocomplete="off" />
-              <input class="form__input" type="text" placeholder="Ваш телефон" autocomplete="off" />
+              <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон" autocomplete="off" />
               <p class="form__privacy form__privacy--bottom">
                 *Мы никому не передаем ваши данные.<br />
                 И не сохраняем ваш номер в базу.
@@ -144,7 +144,7 @@
               И не сохраняем ваш номер в базу.
             </p>
             <input class="form__input" type="text" placeholder="Ваше имя" autocomplete="off" />
-            <input class="form__input" type="text" placeholder="Ваш телефон" autocomplete="off" />
+            <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон" autocomplete="off" />
             <button class="form__btn" type="submit">Посмотреть район</button>
           </form>
         </div>
@@ -206,6 +206,8 @@
       </div>
     </footer>
 
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
