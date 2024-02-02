@@ -1,4 +1,5 @@
 .benefits {
+  overflow: hidden;
   position: relative;
   padding: 120px 0;
 
@@ -14,6 +15,13 @@
   display: flex;
   align-content: center;
   gap: 70px;
+
+  @include mediaTabled {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-items: center;
+    gap: 40px 30px;
+  }
 }
 .benefits__item1,
 .benefits__item2,
@@ -35,10 +43,19 @@
 }
 .benefits__img {
   margin-bottom: 53px;
+  @include mediaTabled {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
 }
 .benefits__text {
   font-family: $font-secondary;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.35;
+
+  @include mediaTabled {
+    font-size: 16px;
+  }
 }

@@ -380,6 +380,7 @@ a:hover {
 }
 
 .benefits {
+  overflow: hidden;
   position: relative;
   padding: 120px 0;
 }
@@ -400,6 +401,14 @@ a:hover {
   display: flex;
   align-content: center;
   gap: 70px;
+}
+@media screen and (max-width: 960px) {
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-items: center;
+    gap: 40px 30px;
+  }
 }
 
 .benefits__item1,
@@ -428,12 +437,24 @@ a:hover {
 .benefits__img {
   margin-bottom: 53px;
 }
+@media screen and (max-width: 960px) {
+  .benefits__img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+}
 
 .benefits__text {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.35;
+}
+@media screen and (max-width: 960px) {
+  .benefits__text {
+    font-size: 16px;
+  }
 }
 
 .apartments {
